@@ -19,6 +19,7 @@ const addTaskSchema = new mongoose.Schema({
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
+    required: [true, "please enter resale price of your product"],
     ref: "Users",
   },
   createdAt: {
